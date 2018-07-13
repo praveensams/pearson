@@ -1,0 +1,9 @@
+FROM nginx
+
+MAINTAINER nginx
+
+LABEL new image
+
+COPY index.html /usr/share/nginx/html/
+
+CMD ["nginx","-g","daemon off;"]
