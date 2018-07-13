@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  
+  nginx:
+   build:
+     context: .
+     dockerfile: node.js
+   volumes:
+     - "./example-app:/mnt"
+
